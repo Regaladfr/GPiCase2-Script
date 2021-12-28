@@ -27,6 +27,8 @@ def poweroff():
 		GPIO.wait_for_edge(powerPin, GPIO.FALLING)
 		os.system("sudo killall emulationstation")
 		os.system("sudo killall emulationstatio") #RetroPie 4.6
+		os.system("bash /opt/RetroFlag/multi_switches.sh --es-poweroff")
+		os.system("sudo killall attract && sleep 5s && sudo shutdown -h now")
 		os.system("sudo sleep 5s")
 		os.system("sudo shutdown -h now")
 def lcdrun():
