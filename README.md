@@ -1,5 +1,7 @@
-# GPiCase2-Script
+# GPiCase2-Script improved
 The RetroFlag GPiCase 2 CM4 safe shutdown script will automatically switch between the LCD display and HDMI output when using the dock.
+add LCD and HDMI config.txt auto saved when switching screen.
+add Multiswitch and attract-mode safeshutdown support.
 
 ## Before installing the script：
 **Make sure that the GPiCase2 patch is installed.**  
@@ -17,31 +19,6 @@ Click the link to download the patch：[Download GPiCase2 patch](https://github.
 3. Press F4 to enter the terminal.
 4. In the terminal, type the command below (This is case sensitive):
 
-`wget -O - "https://raw.githubusercontent.com/RetroFlag/GPiCase2-Script/main/retropie_install_gpi2.sh" | sudo bash`
+`wget -O - "https://raw.githubusercontent.com/Regaladfr/GPiCase2-Script/main/retropie_install_gpi2.sh" | sudo bash`
 
 --------------------
-### For Recalbox7.1.1/8.0
-1. Make sure you are connected to the internet.
-2. Make sure your keyboard is connected.
-3. Press F4, and then press ALT-F2 to enter the terminal.
-4. User: root Password: recalboxroot
-5. In the terminal, type the command below (This is case sensitive):
-
-`wget -O - "https://raw.githubusercontent.com/RetroFlag/GPiCase2-Script/main/recalbox_install_gpi2.sh" | bash`
-
-
---------------------
-
-### for batocera31:
-1. Make sure you are connected to the internet.
-2. Make sure your keyboard is connected.
-3. Enter terminal. For information on how to access the termina, visit this link: https://wiki.batocera.org/access_the_batocera_via_ssh
-4. User: root Password: linux
-5. In the terminal, type the command below (This is case sensitive):
-
-`wget -O - "https://raw.githubusercontent.com/RetroFlag/GPiCase2-Script/main/batocera_install_gpi2.sh" | bash`
-
---------------------
-
-Example for lakkatv:
-https://github.com/marcelonovaes/lakka_nespi_power
