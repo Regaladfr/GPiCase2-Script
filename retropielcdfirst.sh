@@ -31,6 +31,8 @@ if [ "1" = $HDMI_HPD_VALUE  ]; then
 			#echo " defaults.ctl.card 0" >> $File
 			echo "HDMI ADUIO enabled."
 		fi
+		sudo rm -f /boot/config_lcd.txt
+		sudo cp -f "/boot/config.txt" "/boot/config_lcd.txt"
 		sudo rm -f /boot/config.txt
 		sudo cp -f "/boot/config_hdmi.txt" "/boot/config.txt"
 		sudo shutdown -r now  
@@ -49,6 +51,8 @@ else
 			#echo " defaults.ctl.card 1" >> $File
 			echo "USB ADUIO enabled."
 		fi
+		sudo rm -f /boot/config_hdmi.txt
+		sudo cp -f "/boot/config.txt" "/boot/config_hdmi.txt"
 		sudo rm -f /boot/config.txt
 		sudo cp -f "/boot/config_lcd.txt" "/boot/config.txt"
 		sudo shutdown -r now 
