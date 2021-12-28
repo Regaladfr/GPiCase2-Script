@@ -1,6 +1,6 @@
 # GPiCase2-Script improved
 The RetroFlag GPiCase 2 CM4 safe shutdown script will automatically switch between the LCD display and HDMI output when using the dock.
-LCD and HDMI config.txt auto saved when switching screen.
+LCD and HDMI "config.txt" auto saved when switching screen.
 Multiswitch and attract-mode safeshutdown support.
 
 ## Before installing the script：
