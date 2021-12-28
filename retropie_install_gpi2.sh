@@ -1,5 +1,5 @@
 #!/bin/bash
-filewebsite="https://raw.githubusercontent.com/RetroFlag/GPiCase2-Script/main"
+filewebsite="https://raw.githubusercontent.com/Regaladfr/GPiCase2-Script/main"
 sleep 2s
 #Step 1) Check if root--------------------------------------
 if [[ $EUID -ne 0 ]]; then
@@ -36,6 +36,7 @@ if [ -e $script ];
 fi
 wget --no-check-certificate -O  "lcdfirst.sh" "$filewebsite""/retropielcdfirst.sh"
 wget --no-check-certificate -O  "lcdnext.sh" "$filewebsite""/retropielcdnext.sh"
+wget --no-check-certificate -O  "multi_switches.sh" "$filewebsite""/multi_switches.sh"
 #wget --no-check-certificate -O  "LCD.sh" "$filewebsite""/LCD.sh"
 
 #-----------------------------------------------------------
