@@ -36,8 +36,9 @@ if [ -e $script ];
 fi
 wget --no-check-certificate -O  "lcdfirst.sh" "$filewebsite""/retropielcdfirst.sh"
 wget --no-check-certificate -O  "lcdnext.sh" "$filewebsite""/retropielcdnext.sh"
-wget --no-check-certificate -O  "multi_switches.sh" "$filewebsite""/multi_switches.sh"
-#wget --no-check-certificate -O  "LCD.sh" "$filewebsite""/LCD.sh"
+
+cd /etc/modprobe.d
+wget --no-check-certificate -O  "alsa-base.conf" "$filewebsite""/alsa-base.conf"
 
 #-----------------------------------------------------------
 sleep 2s	
